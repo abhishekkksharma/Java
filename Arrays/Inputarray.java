@@ -22,6 +22,7 @@ public class Inputarray {
             str[i] = in.next();
         }
         System.out.println(Arrays.toString(str));
+        in.close();
 
 
     }
