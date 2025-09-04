@@ -17,5 +17,6 @@ public class Multilevel {
             }
         }
         System.out.println(list);
+        in.close();
     }
 }

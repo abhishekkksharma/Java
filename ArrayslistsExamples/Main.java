@@ -26,5 +26,6 @@ public class Main {
             System.out.print(list.get(i) + " "); // pass index here, list[index] wont work here 
         }
         // System.out.println(list);
+        in.close();
     }
 }
