@@ -10,7 +10,7 @@ public class StaticBlock {
         b=a*5;
     }
     public static void main(String[] args) {
-        StaticBlock obj = new StaticBlock();
+        // StaticBlock obj = new StaticBlock();
         System.out.println(StaticBlock.a+ " " +StaticBlock.b);
     } 
 }
