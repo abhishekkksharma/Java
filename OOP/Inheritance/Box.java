@@ -4,6 +4,7 @@ public class Box {
     double l;
     double h;
     double w;
+    // double height;
     Box(){
         this.h=-1;
         this.l=-1;
