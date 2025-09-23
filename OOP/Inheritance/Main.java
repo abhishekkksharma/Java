@@ -12,5 +12,8 @@ public class Main {
         System.out.println(boxw.h + " " + boxw.weight);
         System.out.println(boxw3.l + " " + boxw3.h + " " + boxw3.w + " " + boxw3.weight);
         // System.out.println(boxw3.height); // using super keyword we are calling the value of hieght in Boxweight from Box
+
+        BoxPrice bp = new BoxPrice(5,6,200);
+        System.out.println("The cost of box is: "+bp.cost);
     }
 }

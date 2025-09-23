@@ -5,6 +5,11 @@ public class Boxweight extends Box {
     public Boxweight(){
         this.weight=-1;
     }
+
+    Boxweight (double side, double weight){
+        super(side);
+        this.weight = weight;
+    }
     Boxweight(double l,double h, double w,double weight ){
         // this.l=l;
         // this.h=h;
@@ -13,5 +18,9 @@ public class Boxweight extends Box {
         super(l,w,h); // uses the upper Class constructor 
         // System.out.println(super.height); //using super keyword we are calling the value of hieght in Boxweight from Box
         this.weight=weight;
+    }
+    public Boxweight(Boxweight other) {
+        super(other);         // calls Box(Box other)
+        this.weight = other.weight;
     }
 }
