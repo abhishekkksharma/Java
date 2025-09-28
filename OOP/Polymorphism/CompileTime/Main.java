@@ -8,5 +8,6 @@ public class Main {
 
         shape.area();
         circle.area();
+        square.area();
     }
 }

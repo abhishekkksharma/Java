@@ -1,0 +1,7 @@
+ENCAPSULATION: 
+wrapping up the implementation of the data members 
+and methods in a class.
+
+ABSTRACTION:
+Hiding the unneccessary details and showing
+valuable information.
