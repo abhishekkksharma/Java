@@ -17,6 +17,7 @@ public class Main {
         System.out.println("This element is deleted from end: "+list.deleteLast());
         System.out.println("Deleted with index: "+list.delete(3));
         list.printList();
+        list.printReverse(list.head);
         System.out.println("Size: "+list.size);
     }
 }

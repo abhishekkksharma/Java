@@ -107,7 +107,7 @@ public class LL {
     }
     //find node
     public Node find(int value){
-        Node node = head;
+        Node node = head;   
         while(node!=null){
             if(node.value == value){
                 return node;
@@ -125,6 +125,12 @@ public class LL {
             temp = temp.next;
         }
         System.out.println("END");
+    }
+
+    public void printReverse(Node head) {
+    if (head == null) return;
+    printReverse(head.next);
+    System.out.print(head.value + " -> ");
     }
 
     //Node class 
