@@ -10,5 +10,9 @@ public class Main {
         list.insertLast(5);
         list.insert(2, 88);
         list.print();
+        list.deleteFirst();
+        list.deleteLast();
+        System.out.println("----------");
+        list.print();
     }
 }

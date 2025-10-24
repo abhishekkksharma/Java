@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.Single;
 
 public class LL {
     Node head;
@@ -57,6 +57,19 @@ public class LL {
         size++;
     }
 
+    // insert at index using recursion
+    public void insertRec(int val, int index){
+        head = insertRec(val, index, head);
+    }
+    private Node insertRec(int val, int index, Node node){
+        if(index==0){
+            Node temp = new Node(val,node);
+            size++;
+            return temp;
+        }
+        node.next = insertRec(val, index-1,node.next);
+        return node;
+    }
     //delete first Node (head)
     public int deleteFirst(){
         int val = head.value;
@@ -105,6 +118,32 @@ public class LL {
         }
         return node;
     }
+    //merge two sorted lists leetcode: 21
+    public static LL merge(LL first, LL second){
+        Node f = first.head;
+        Node s = second.head;
+        LL ans = new LL();
+        while(f!=null && s!=null){
+            if(f.value<=s.value){
+                ans.insertLast(f.value);
+                f=f.next;
+            }
+            else{
+                ans.insertLast(s.value);
+                s=s.next;
+            }
+        }
+        while (f!=null) {
+            ans.insertLast(f.value);
+            f=f.next;
+        }
+        while (s!=null) {
+            ans.insertLast(s.value);
+            s=s.next;
+        }
+        return ans;
+    }
+
     //find node
     public Node find(int value){
         Node node = head;   

@@ -36,6 +36,39 @@ public class DLL {
         }
         return null;
     }
+    public void deleteFirst(){
+        if(head==null) return;
+        if (head.next==null) {
+            head=null;
+            return;
+        }
+        head=head.next;
+        head.prev=null;
+    }
+    public void deleteLast(){
+        if(head==null) return;
+        if (head.next==null) {
+            head=null;
+            return;
+        }
+        Node node = head;
+        while (node.next!=null) {
+            node=node.next;
+        }
+        node.prev.next=null;
+    }
+    public void delete(int value){
+        if(head==null) return;
+        if(head.val==value){
+            head=null;
+            return;
+        }
+        Node node = head;
+        while (node.next.val!=value) {
+            node=node.next;
+        }
+        node.next=node.next.next;
+    }
 
     public void insert(int after, int val){
         Node p = find(after);
@@ -78,11 +111,11 @@ public class DLL {
         public Node(int val) {
             this.val = val;
         }
-        public Node(int val, Node next, Node prev) {
-            this.val = val;
-            this.next = next;
-            this.prev = prev;
-        }
+        // public Node(int val, Node next, Node prev) {
+        //     this.val = val;
+        //     this.next = next;
+        //     this.prev = prev;
+        // }
         
     }
 }
