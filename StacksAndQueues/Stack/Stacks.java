@@ -1,4 +1,4 @@
-package StacksAndQueues.InBuiltStacks;
+package StacksAndQueues.Stack;
 
 import java.util.Stack;
 
