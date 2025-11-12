@@ -9,6 +9,7 @@ public class Inputs {
 
         String name  = input.nextLine();
         System.out.println(name);
+        // char ch = input.next();
 
         float marks =  input.nextFloat();
         System.out.println(marks);
