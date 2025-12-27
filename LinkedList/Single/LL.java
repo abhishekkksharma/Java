@@ -167,9 +167,9 @@ public class LL {
     }
 
     public void printReverse(Node head) {
-    if (head == null) return;
-    printReverse(head.next);
-    System.out.print(head.value + " -> ");
+        if (head == null) return;
+        printReverse(head.next);
+        System.out.print(head.value + " -> ");
     }
 
     //Node class 
