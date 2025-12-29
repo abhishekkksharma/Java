@@ -1,9 +1,5 @@
 package Recursion;
 
-import java.util.LinkedList;
-
-import org.w3c.dom.Node;
-
 public class Nto1 {
     public static void main(String[] args) {
         // fun(5);
