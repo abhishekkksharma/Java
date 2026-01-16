@@ -5,16 +5,19 @@ import java.util.Arrays;
 public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = {4,2,8,1,9,0};
-        sort(arr, 0);
+        bubble(arr, arr.length);
         System.out.println(Arrays.toString(arr));
     }
-    static void sort(int[] arr,int j){
-        if(j>=arr.length-1) return;
-        if(arr[j]>arr[j+1]){
-            int temp=arr[j];
-            arr[j]=arr[j+1];
-            arr[j+1]=temp;
+    static void bubble(int[] arr, int n) {
+        if (n == 0) return;
+        
+        for (int i = 0; i < n; i++) {
+            if (arr[i] > arr[i + 1]) {
+                int temp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = temp;
+            }
         }
-        sort(arr,j+1);
+        bubble(arr, n - 1);
     }
 }
