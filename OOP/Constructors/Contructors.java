@@ -1,6 +1,6 @@
 package OOP.Constructors;
 
-public class Contructorss {
+public class Contructors {
     public static void main(String[] args) {
         // not a good practice for constructor:
         // Student Student1 = new Student();

@@ -7,6 +7,12 @@ public class SwapNums {
         int[] arr = {1,2};
         swap4(arr);
         System.out.println(Arrays.toString(arr));
+        System.out.println("7 << 3 = "+ (7<<3));
+        System.out.println("-7 << 3 = "+ (-7<<3));
+        System.out.println("7 >> 3 = "+ (7>>3));
+        System.out.println("-7 >> 3 = "+ (-7>>3));
+        System.out.println("7 >>> 3 = "+ (7>>>3));
+        System.out.println("-7 >>> 3 = "+ (-7>>>3));
     }
 
     //using temp variable
@@ -27,7 +33,9 @@ public class SwapNums {
         arr[1]=arr[0]^arr[1];
         arr[0]=arr[0]^arr[1];
     }
+    //oneline swaping
     static void swap4(int[] arr){
         arr[0]=(arr[0]+arr[1]) - (arr[1]=arr[0]);
     }
+
 }
