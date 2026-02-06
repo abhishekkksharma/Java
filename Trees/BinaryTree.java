@@ -25,7 +25,7 @@ public class BinaryTree {
         populate(sc, root);
     }
     private void populate(Scanner sc , Node node){
-        System.out.println("Do tou want to enter at the left of "+ node.val);
+        System.out.println("Do you want to enter at the left of "+ node.val);
         boolean left = sc.nextBoolean();
         if (left) {
             System.out.println("Enter the value to insert at left of: " + node.val);
@@ -34,7 +34,7 @@ public class BinaryTree {
             populate(sc, node.left);
         }
 
-        System.out.println("Do tou want to enter at the right of "+ node.val);
+        System.out.println("Do you want to enter at the right of "+ node.val);
         boolean right = sc.nextBoolean();
         if (right) {
             System.out.println("Enter the value to insert at right of: " + node.val);
