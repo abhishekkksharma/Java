@@ -7,7 +7,7 @@ public class Main {
         // Scanner sc = new Scanner(System.in);
         BST bst = new BST();
         // int[] nums={5,2,7,1,4,6,9,8,3,10};
-        int[] nums2={1,2,3,4,5,6,7,8,9,10};
+        int[] nums2={1,1,2,3,4,5,6,7,8,9,10};
         // bst.populate(nums);
         bst.populateSorted(nums2);
         // bst.display();

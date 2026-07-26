@@ -72,7 +72,19 @@ public class BinaryTree {
         }
         prettyDisplay(node.left,level+1);
     }
+    public int findHeight(){
+        return findHeight(root);
+    }
+    public int findHeight(Node root){
+        if(root==null) return -1;
+        return Math.max(findHeight(root.left),findHeight(root.right))+1;
+    }
 
+    public boolean search(Node root, int key){
+        if(root==null) return false;
+        if(root.val==key) return true;
+        return search(root.left, key) || search(root.right, key);
+    }
 
     public static void main(String[] args) {
         BinaryTree bt = new BinaryTree();
@@ -81,5 +93,7 @@ public class BinaryTree {
         // bt.display();
         // System.out.println("------------");
         bt.prettyDisplay();
+        System.out.println(bt.findHeight());
+        System.out.println(bt.search(bt.root, 3));
     }
 }
